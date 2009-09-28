@@ -1,17 +1,12 @@
-% LaTeX resume using res.cls
 \documentclass[margin]{res}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
-\setlength{\textwidth}{5.1in} % set width of text portion
+\setlength{\textwidth}{5.1in}
+\setlength{\textheight}{10in}
 
 \begin{document}
 
-% Center the name over the entire width of resume:
+
  \moveleft.5\hoffset\centerline{\large\bf Julio Capote}
-% Draw a horizontal line the whole width of resume:
  \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-% address begins here
-% Again, the address lines must be centered over entire width of resume:
  \moveleft.5\hoffset\centerline{www.juliocapote.com}
  \moveleft.5\hoffset\centerline{jcapote@gmail.com}
 
@@ -28,14 +23,19 @@
   Javascript, XHTML/CSS/AJAX, REST/SOAP (HTTP), MySQL, Rails, Sinatra  \\ \\
   {\sl Operating Systems:} Linux, FreeBSD, Solaris
   
-  \section{EXPERIENCE} {\sl Web Developer} \hfill 2006-2007 \\
-  Worldmedia, Miami, FL
+  \section{EXPERIENCE} {\sl Founder/Developer } \hfill 2007-Present \\
+  Nuklei.com, Miami, FL
   \begin{itemize}  \itemsep -2pt %reduce space between items
-  \item Implemented a solution that backed up important sites/databases
-    to an off-site server for safekeeping
-  \item Setup and administrated several mission critical, load-balancing
-    environments for heavily loaded sites (800,000+ page views a day)
-  \item Regularly customized and combined open source software to suit our needs
+    \item Architectured a distributed, end to end supply chain management system that synchronizes orders
+      and inventory from distributors to and from  marketplaces
+    \item Created a multi-threaded java web application that turns PDF's into an
+      universally accessible javascript slideshow with lightweight images for a local newspaper
+      company
+      \item Implemented ``upload-by-email'' functionality for various websites so clients can easily 
+        update parts of their website using their email
+    \item Consulted clients regarding best practices and speed/traffic optimization for their
+      web sites
+      
   \end{itemize}
 
 
@@ -54,6 +54,8 @@
   \begin{itemize}  \itemsep -2pt %reduce space between items
   \item Created a monitoring system for all of our hosts/servers, which allowed
     for higher availability and faster response times
+  \item Founded Madlab, an organization/club geared towards teaching UNIX/
+    Linux concepts to peers from a hands-on perspective
   \item Made a heterogeneous environment (Windows and UNIX) inter
     operate smoothly via implementing custom solutions on both platforms
   \end{itemize} 
@@ -61,30 +63,23 @@
   {\sl Network Assistant} \hfill        2000-2003 \\
   Felix Varela Senior High School, Miami, FL
   \begin{itemize}  \itemsep -2pt %reduce space between items
-  \item Set up a Linux server that monitors port-specific bandwidth, allowing
-    us to revise and refine our security control mechanisms at the server
-    level, to stop gaming and other illegal activities at the school.
+  \item Assisted the Network Staff with various day to day IT duties such as:
+    Setting up servers, evaluating new software, and trouble shooting faculty issues
   \item Created a Help-desk system using PHP/MySQL, allowing teachers to
     report trouble-tickets, improving support response time and maximizing
     efficiency.
-  \end{itemize} 
-  
-  \section{COMMUNITY \\ SERVICE}  Organized and directed the 1988 and 1989 Grand 
-  Marshall Week \newline ``Basketball Marathon.'' A 24 hour 
-  charity event to benefit the Troy Boys Club. Over 
-  250 people participated each year. 
-  
-  \section{EXTRA-CURRICULAR \\ ACTIVITIES}             
-  Elected {\it House Manager}, Rho Phi Sorority \\
-  Elected {\it Sports Chairman} \\
-  Attended Krannet Leadership Conference \\
-  Headed delegation to Rho Phi Congress \\
-  Junior varsity basketball team \\
-  Participant, seven intramural athletic teams 
-  
-  
+    \end{itemize} 
+
+  \section{ACCOLADES}
+  {\bf Watercoolr }{\it featured on O'Reilly Radar} \\
+  {\bf Community Award }{\it Florida International University, 2005}
+
  \end{resume}
 \end{document}
+
+
+
+
 
 
 
