@@ -1,8 +1,6 @@
-# Julio Capote 2011 Resume
+# Julio Capote Resume
 
 ## Dependencies:
    * LaTeX
-   * evince
-
 
 To build just run 'rake'
