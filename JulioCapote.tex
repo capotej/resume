@@ -7,88 +7,106 @@
 \begin{document}
 
 
- \moveleft.5\hoffset\centerline{\large\bf Julio Capote}
- \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
- \moveleft.5\hoffset\centerline{www.juliocapote.com}
- \moveleft.5\hoffset\centerline{www.github.com/capotej}
- \moveleft.5\hoffset\centerline{jcapote@gmail.com}
+\moveleft.5\hoffset\centerline{\large\bf Julio Capote}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+\moveleft.5\hoffset\centerline{www.juliocapote.com}
+\moveleft.5\hoffset\centerline{www.github.com/capotej}
+\moveleft.5\hoffset\centerline{jcapote@gmail.com}
 
 
- \begin{resume}
-   
-   \section{SUMMARY} Agile Ruby Web Developer/UNIX Administrator
-   with 8 years experience implementing, deploying, and administering large
-   software systems using various technologies. Specializes in modernizing
-   legacy applications, Cloud Computing, and interacting with Web API's.
-   
-   
-   \section{SKILLS}  
-           {\sl Languages:} Ruby, Rails2/3, Java/JRuby, PHP, HTML5/JS/CSS  \\ \\
-           {\sl Databases:} Redis, CouchDB, Solr  \\ \\
-           
-           \section{EXPERIENCE} 
-                   {\sl Lead Developer } \hfill 2009-2011 \\
-                   Destructoid.com, San Francisco, CA
-                   \begin{itemize}  \itemsep -2pt %reduce space between items
-                   \item Started an initiative to port 3 different PHP codebases into a single multisite framework written in Rails
-                   \item Used Redis/Resque and Varnish to intelligently cache a contextually specific, highly dynamic website to thousands of concurrent users
-                   \item Wrote an event-driven upload server in Ruby (using eventmachine/rainbows) to handle multiple uploads a second (http://github.com/capotej/uploadd)
-                   \item Deployed and scaled a high traffic Rails site using EngineYard and subsquently Heroku
-                   \item Patched and customized dozens of popular open source gems/plugins to suit our specific needs (performance or otherwise)
-                   \end{itemize}
-                   
-                   
-                   {\sl Founder/Developer } \hfill 2007-2009 \\
-                   Nuklei.com, Miami, FL
-                   \begin{itemize}  \itemsep -2pt %reduce space between items
-                   \item Architectured a distributed, end to end supply chain management system that synchronizes orders
-                     and inventory from distributors to and from marketplaces
-                   \item Created a multi-threaded java web application that turns PDF's into an
-                     universally accessible javascript slideshow with lightweight images for a local newspaper
-                     company
-                   \item Implemented ``upload-by-email'' functionality for various websites so clients can easily 
-                     update parts of their website using their email
-                   \item Consulted clients regarding best practices and speed/traffic optimization for their
-                     web sites
-                     
-                   \end{itemize}
-                   
-                   {\sl Web Developer} \hfill 2006-2007 \\
-                   Worldmedia, Miami, FL
-                   \begin{itemize}  \itemsep -2pt %reduce space between items
-                   \item Implemented a solution that backed up important sites/databases
-                     to an off-site server for safekeeping
-                   \item Setup and administrated several mission critical, load-balancing
-                     environments for heavily loaded sites (800,000+ page views a day)
-                   \end{itemize}
+\begin{resume}
 
-                   {\sl Systems Engineer} \hfill            2003-2006 \\
-                   Computer Science Department, FIU, Miami, FL
-                   \begin{itemize}  \itemsep -2pt %reduce space between items
-                   \item Created a monitoring system for all of our hosts/servers, which allowed
-                     for higher availability and faster response times
-                   \item Founded Madlab, an organization/club geared towards teaching UNIX/
-                     Linux concepts to peers from a hands-on perspective
-                   \item Made a heterogeneous environment (Windows and UNIX) inter
-                     operate smoothly via implementing custom solutions on both platforms
-                   \end{itemize} 
-                   
-                   {\sl Network Assistant} \hfill        2000-2003 \\
-                   Felix Varela Senior High School, Miami, FL
-                   \begin{itemize}  \itemsep -2pt %reduce space between items
-                   \item Assisted the Network Staff with various day to day IT duties such as:
-                     Setting up servers, evaluating new software, and trouble shooting faculty issues
-                   \item Created a Help-desk system using PHP/MySQL, allowing teachers to
-                     report trouble-tickets, improving support response time and maximizing
-                     efficiency
-                   \end{itemize} 
-                   
-                   \section{ACCOLADES}
-                           {\bf Watercoolr (http://watercoolr.nuklei.com) }{\it featured on O'Reilly Radar} \\
-                           {\bf Community Award }{\it Florida International University, 2005}
+  \section{SUMMARY} Agile Ruby Web Developer/UNIX Administrator
+  with 8 years experience implementing, deploying, and administering large
+  software systems using various technologies. Specializes in modernizing
+  legacy applications, distributed/cloud computing, and interacting with web services.
 
 
- \end{resume}
+  \section{SKILLS}  
+  {\sl Languages:} \/ Ruby, Javascript/Coffeescript, Java/Scala(lite), Erlang(lite)  \\ \\
+  {\sl Databases:} \/ Redis, Riak, Solr, MySQL  \\ \\
+  {\sl Frameworks:} \/ Rails 2 \& 3, Sinatra, Eventmachine, Backbone \\ \\
+
+  \section{EXPERIENCE} 
+
+  {\sl Software Engineer } \hfill 2011-Present \\
+  Posterous.com, San Francisco, CA
+  \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Created ``Posterous-in-a-box'' system on EC2, allowing developers to quickly spin a up new dev environment with all the needed services already configured and running
+    \item Set up a spam defense system that would thumbnail all incoming uploaded videos and display them sorted by total bandwith consumed, making it easy to spot and remove popular copyrighted content that was slowing us down
+    \item Assisted in migrating our large codebase/infastructure to Bundler
+    \item Deployed StatsD for tracking various performance metrics across the site
+    \item Wrote a service that would periodically monitor queues and ``retask'' workers to work on the highest ones, according to a configurable priority policy
+    \item Implemented an API rate limiter with per-user quotas and a token whitelist
+    \item Tuned our Rails/Solr integration to achieve near real-time search
+    \item Profiled and tweaked the Ruby garbage collector for improved performance
+
+
+  \end{itemize}
+
+
+  {\sl Lead Developer } \hfill 2009-2011 \\
+  Destructoid.com, San Francisco, CA
+  \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Started an initiative to port 3 different PHP codebases into a single multisite framework written in Rails
+    \item Used Redis/Resque and Varnish to intelligently cache a contextually specific, highly dynamic website to thousands of concurrent users
+    \item Wrote an event-driven upload server in Ruby (using eventmachine/rainbows) to handle multiple uploads a second (http://github.com/capotej/uploadd)
+    \item Deployed and scaled a high traffic Rails site using EngineYard and subsquently Heroku
+    \item Patched and customized dozens of popular open source gems/plugins to suit our specific needs (performance or otherwise)
+  \end{itemize}
+
+
+  {\sl Founder/Developer } \hfill 2007-2009 \\
+  Nuklei.com, Miami, FL
+  \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Architectured a distributed, end to end supply chain management system that synchronizes orders
+      and inventory from distributors to and from marketplaces
+    \item Created a multi-threaded java web application that turns PDF's into an
+      universally accessible javascript slideshow with lightweight images for a local newspaper
+      company
+    \item Implemented ``upload-by-email'' functionality for various websites so clients can easily 
+      update parts of their website using their email
+    \item Consulted clients regarding best practices and speed/traffic optimization for their
+      web sites
+
+  \end{itemize}
+
+  {\sl Web Developer} \hfill 2006-2007 \\
+  Worldmedia, Miami, FL
+  \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Implemented a solution that backed up important sites/databases
+      to an off-site server for safekeeping
+    \item Setup and administrated several mission critical, load-balancing
+      environments for heavily loaded sites (800,000+ page views a day)
+  \end{itemize}
+
+  {\sl Systems Engineer} \hfill            2003-2006 \\
+  Computer Science Department, FIU, Miami, FL
+  \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Created a monitoring system for all of our hosts/servers, which allowed
+      for higher availability and faster response times
+    \item Founded Madlab, an organization/club geared towards teaching UNIX/
+      Linux concepts to peers from a hands-on perspective
+    \item Made a heterogeneous environment (Windows and UNIX) inter
+      operate smoothly via implementing custom solutions on both platforms
+  \end{itemize} 
+
+  {\sl Network Assistant} \hfill        2000-2003 \\
+  Felix Varela Senior High School, Miami, FL
+  \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Assisted the Network Staff with various day to day IT duties such as:
+      Setting up servers, evaluating new software, and trouble shooting faculty issues
+    \item Created a Help-desk system using PHP/MySQL, allowing teachers to
+      report trouble-tickets, improving support response time and maximizing
+      efficiency
+  \end{itemize} 
+
+  \section{ACCOLADES}
+  {\bf Watercoolr (http://watercoolr.nuklei.com) }{\it featured on O'Reilly Radar} \\
+  {\bf Community Award }{\it Florida International University, 2005}
+
+
+\end{resume}
 \end{document}
 
 
