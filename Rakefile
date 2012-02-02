@@ -1,3 +1,4 @@
 task :default do
-     `texi2pdf JulioCapote2009.tex;evince JulioCapote2009.pdf`
+  year = Time.now.strftime('%Y')
+  `texi2pdf JulioCapote.tex -o JulioCapote#{year}.pdf && open JulioCapote#{year}.pdf`
 end 
