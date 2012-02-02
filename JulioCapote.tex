@@ -2,10 +2,7 @@
 \setlength{\textwidth}{5.1in}
 \setlength{\textheight}{8.5in}
 
-
-
 \begin{document}
-
 
 \moveleft.5\hoffset\centerline{\large\bf Julio Capote}
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
@@ -13,16 +10,15 @@
 \moveleft.5\hoffset\centerline{www.github.com/capotej}
 \moveleft.5\hoffset\centerline{jcapote@gmail.com}
 
-
 \begin{resume}
 
   \section{SUMMARY} Agile Ruby Web Developer/UNIX Administrator
   with 8 years experience implementing, deploying, and administering large
   software systems using various technologies. Specializes in modernizing
-  legacy applications, distributed/cloud computing, and interacting with web services.
+  legacy applications, distributed/cloud computing, and web service interaction.
 
 
-  \section{SKILLS}  
+  \section{SKILLS}
   {\sl Languages:} \/ Ruby, Javascript/Coffeescript, Java/Scala(lite), Erlang(lite)  \\ \\
   {\sl Databases:} \/ Redis, Riak, Solr, MySQL  \\ \\
   {\sl Frameworks:} \/ Rails 2 \& 3, Sinatra, Eventmachine, Backbone \\ \\
@@ -32,42 +28,38 @@
   {\sl Software Engineer } \hfill 2011-Present \\
   Posterous.com, San Francisco, CA
   \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Created ``Posterous-in-a-box'' system on EC2, allowing developers to quickly spin a up new dev environment with all the needed services already configured and running
-    \item Set up a spam defense system that would thumbnail all incoming uploaded videos and display them sorted by total bandwith consumed, making it easy to spot and remove popular copyrighted content that was slowing us down
-    \item Assisted in migrating our large codebase/infrastructure to Bundler
-    \item Deployed StatsD for tracking various performance metrics across the site
-    \item Wrote a service that would periodically monitor queues and ``retask'' workers to work on the highest ones, according to a configurable priority policy
-    \item Implemented an API rate limiter with per-user quotas and a token whitelist
-    \item Tuned our Rails/Solr integration to achieve near real-time search
-    \item Profiled and tweaked the Ruby garbage collector for improved performance
-
+    \item Created ``Posterous-in-a-Box'', a self-contained version of Posterous running all required services on EC2. This system enabled rapid creation of new development environments for all engineers.
+    \item Set up a spam defense system that would analyze uploaded videos, automatically banning pirated and copyrighted content and controlling abusive behavior on service.
+    \item Assisted in migrating our codebase to Bundler.
+    \item Deployed a customized StatsD instance for realtime monitoring of performance metrics across the site.
+    \item Wrote a service that automatically retasked the asynchronous job infrastructure according to demand.
+    \item Implemented an API rate limiter with per-user quotas and a token whitelist.
+    \item Optimized and tuned our Rails/Solr integration to achieve near real-time search.
+    \item Profiled and tweaked the Ruby garbage collector for improved performance.
 
   \end{itemize}
-
 
   {\sl Lead Developer } \hfill 2009-2011 \\
   Destructoid.com, San Francisco, CA
   \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Started an initiative to port 3 different PHP codebases into a single multisite framework written in Rails
-    \item Used Redis/Resque and Varnish to intelligently cache a contextually specific, highly dynamic website to thousands of concurrent users
-    \item Wrote an event-driven upload server in Ruby (using eventmachine/rainbows) to handle multiple uploads a second (http://github.com/capotej/uploadd)
-    \item Deployed and scaled a high traffic Rails site using EngineYard and subsquently Heroku
-    \item Patched and customized dozens of popular open source gems/plugins to suit our specific needs (performance or otherwise)
+    \item Led an initiative to port three legacy PHP codebases into a single multisite Rails framework.
+    \item Used Redis and Varnish to intelligently cache a contextually specific, highly dynamic website to thousands of concurrent users.
+    \item Wrote an event-driven upload server in Ruby (using Eventmachine/Rainbows) to handle multiple concurrent uploads (http://github.com/capotej/uploadd).
+    \item Deployed and scaled a high traffic Rails site using EngineYard and Heroku.
+    \item Patched and customized dozens of popular open source gems/plugins for performance and scaling.
   \end{itemize}
 
 
   {\sl Founder/Developer } \hfill 2007-2009 \\
   Nuklei.com, Miami, FL
   \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Architectured a distributed, end to end supply chain management system that synchronizes orders
-      and inventory from distributors to and from marketplaces
-    \item Created a multi-threaded java web application that turns PDF's into an
-      universally accessible javascript slideshow with lightweight images for a local newspaper
-      company
-    \item Implemented ``upload-by-email'' functionality for various websites so clients can easily 
-      update parts of their website using their email
-    \item Consulted clients regarding best practices and speed/traffic optimization for their
-      web sites
+    \item Architected a distributed, end-to-end supply chain management system that synchronized orders
+      and inventory across distributors and marketplaces.
+    \item Created a multi-threaded Java web application that converted PDFs into
+      universally accessible javascript slideshows for a local newspaper.
+    \item Implemented ``upload-by-email'' functionality for various websites, giving clients the ability to easily
+      update their website via email.
+    \item Advised clients on best practices and speed/traffic optimizations for their web sites.
 
   \end{itemize}
 
@@ -75,44 +67,21 @@
   Worldmedia, Miami, FL
   \begin{itemize}  \itemsep -2pt %reduce space between items
     \item Implemented a solution that backed up important sites/databases
-      to an off-site server for safekeeping
+      to an off-site server for safekeeping.
     \item Setup and administrated several mission critical, load-balancing
-      environments for heavily loaded sites (800,000+ page views a day)
+      environments for heavily loaded sites (800,000+ page views a day).
   \end{itemize}
 
   {\sl Systems Engineer} \hfill            2003-2006 \\
   Computer Science Department, FIU, Miami, FL
   \begin{itemize}  \itemsep -2pt %reduce space between items
     \item Created a monitoring system for all of our hosts/servers, which allowed
-      for higher availability and faster response times
+      for higher availability and faster response times.
     \item Founded Madlab, an organization/club geared towards teaching UNIX/
       Linux concepts to peers from a hands-on perspective
-    \item Made a heterogeneous environment (Windows and UNIX) inter
-      operate smoothly via implementing custom solutions on both platforms
+    \item Managed a heterogeneous Windows and Linux environment (Windows and UNIX) with
+      custom tools written for both platforms.
   \end{itemize} 
-
-  {\sl Network Assistant} \hfill        2000-2003 \\
-  Felix Varela Senior High School, Miami, FL
-  \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Assisted the Network Staff with various day to day IT duties such as:
-      Setting up servers, evaluating new software, and trouble shooting faculty issues
-    \item Created a Help-desk system using PHP/MySQL, allowing teachers to
-      report trouble-tickets, improving support response time and maximizing
-      efficiency
-  \end{itemize} 
-
-  \section{ACCOLADES}
-  {\bf Watercoolr (http://watercoolr.nuklei.com) }{\it featured on O'Reilly Radar} \\
-  {\bf Community Award }{\it Florida International University, 2005}
-
 
 \end{resume}
 \end{document}
-
-
-
-
-
-
-
-
